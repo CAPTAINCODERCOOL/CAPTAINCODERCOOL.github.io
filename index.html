@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chirag Patil Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Chirag Patil</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/final.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Chirag Patil</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Tech Enthusiast',
+						'Coder',
+						'AI Developer'
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Full Stack Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://github.com/CAPTAINCODERCOOL" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+ <style>
+  /* Darken the overlay */
+  #about-section .overlay {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  /* Accent color for titles */
+  #about-section .about-info .title-s,
+  #about-section .skill-mf .title-s {
+    color: #ffc107;
+  }
+
+  /* General text in overlay */
+  #about-section .about-info span,
+  #about-section .skill-mf,
+  #about-section .skill-mf p,
+  #about-section .skill-category .subtitle-s {
+    color: #fff;
+  }
+
+  /* Subtitle in each skill category */
+  #about-section .skill-category .subtitle-s {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Paragraphs inside each category */
+  #about-section .skill-category p {
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    opacity: 0.85;
+  }
+
+  /* Spacing above skills block */
+  #about-section .skill-mf {
+    margin-top: 2rem;
+  }
+
+  /* Button group below LinkedIn */
+  #about-section .social-links {
+    margin-top: 1.5rem;
+  }
+  #about-section .social-links .btn {
+    margin-right: 0.75rem;
+    border-color: #fff;
+    color: #fff;
+  }
+  #about-section .social-links .btn:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #ffc107;
+    border-color: #ffc107;
+  }
+</style>
+
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+  <div class="container">
+    <div class="row">
+      
+      <!-- LEFT COLUMN -->
+      <div class="col-md-6 ftco-animate">
+        <h2 class="mb-4">Chirag Patil</h2>
+        <p><strong>Job Role:</strong> Full Stack Developer</p>
+        <p><strong>Experience:</strong> 3 Years</p>
+        <p><strong>Address:</strong> Arlington, Texas</p>
+
+        <h4 class="mt-4">Skills</h4>
+
+        <p><strong>Languages:</strong> Python, Java, JavaScript / TypeScript, SQL, C / C++, Bash, HTML, CSS, R, MATLAB, GNU Octave</p>
+        <p><strong>Frameworks & Libraries:</strong> React.js, Redux, AngularJS, Node.js, Spring Boot, Flask, FastAPI, TensorFlow, PyTorch, Keras, Scikit-learn, XGBoost, BERT, LSTM</p>
+        <p><strong>Cloud & DevOps:</strong> AWS (S3, RDS, Lambda, CloudFormation), Azure, Kubernetes, Docker, Jenkins, Airflow, MLflow, CI/CD, Linux, Git</p>
+        <p><strong>Databases:</strong> MySQL, PostgreSQL, AWS DynamoDB, IBM DB2, Firebase, Redis, NoSQL</p>
+        <p><strong>ML & Data:</strong> Machine Learning, Deep Learning, NLP, Data Engineering, MLOps, PCA, SVM, HMMs, Decision Trees</p>
+        <p><strong>Visualization & Testing:</strong> Tableau, D3.js, Jupyter, Postman, Swagger, Selenium, JMeter, UFT</p>
+        <p><strong>Other Skills:</strong> Agile (Scrum), Project Management, Risk Mitigation, Collaboration, Embedded Systems</p>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-md-6 ftco-animate">
+        <h1 class="big">About Me</h1>
+        <p>
+          Results-driven Software Engineer with 2+ years of experience designing and deploying AI-driven, full-stack, and cloud-native solutions that scale. Proven expertise in building robust web applications, implementing machine learning models, and architecting cloud infrastructures on AWS to improve efficiency, reliability, and user engagement.
+        </p>
+        <p>
+          Adept at collaborating in Agile teams, optimizing DevOps pipelines, and delivering high-impact features under tight deadlines. Passionate about leveraging emerging technologies to solve real-world problems and drive business value.
+        </p>
+
+        <ul class="about-info mt-4">
+          <li><strong>Profile:</strong> Software Developer with AI Specialization</li>
+          <li><strong>Domain:</strong> AI, Data Science, Full Stack Development, Cloud Technology</li>
+          <li><strong>Education:</strong> BE & Pursuing Masters</li>
+          <li><strong>BI Tools:</strong> Power BI, Looker & Tableau</li>
+          <li><strong>Other Skills:</strong> Cloud, PySpark, Excel, Git, JIRA, Google Analytics & SEO</li>
+          <li><strong>Interest:</strong> Travelling, Coding, Tech Crazy</li>
+        </ul>
+
+        <div class="mt-4">
+          <a href="https://www.linkedin.com/in/chiragpatil04/" class="btn btn-primary py-2 px-3">LinkedIn</a>
+          <a href="mailto:chiragpatilprofessional@gmail.com" class="btn btn-outline-light py-2 px-3">Email Me</a>
+          <a href="https://drive.google.com/drive/folders/1mB9jiINTJMn5VeqmIYOgbfHY-fKZWEdA?usp=sharing" class="btn btn-outline-light py-2 px-3">Web Portfolio</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Innovative Software Engineer with expertise in AI, Generative AI, cloud, and full-stack development. Proven ability to deliver scalable, impactful solutions that enhance user experience and business outcomes. Adept at building intelligent systems, optimizing workflows, and collaborating in Agile teams to solve complex, real-world problems.</p>
+            <a href="https://drive.google.com/file/d/1CDYJstgp938O6kBsymbWFgXajx_mx2kt/view?usp=sharing" class="btn btn-outline-light py-3 px-3">Resume</a>  
+		</div>
+        </div>
+
+		<!--==========================
+  EXPERIENCE & EDUCATION
+============================-->
+<section class="ftco-section ftco-no-pb" id="resume-section">
+  <div class="container">
+    <!-- Experience -->
+    <div class="row">
+      <h1 class="big-4">Experience</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
+    <div class="row">
+      <!-- Software Development Intern -->
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">May 2025 – Aug 2025</span>
+          <h2>Software Development Intern</h2>
+          <span class="position">Infobay — Remote</span>
+          <ul class="mt-4">
+            <li>Developed and deployed a cloud‑based web application using Python &amp; AWS, improving backend response time by 30% and scaling to 10K+ users.</li>
+            <li>Automated deployment pipelines with AWS CloudFormation &amp; CI/CD, reducing release cycles by 40% and boosting reliability.</li>
+            <li>Designed secure, cost‑optimized cloud storage solutions (S3 &amp; RDS), cutting storage costs by 20% and achieving 99.99% uptime.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Full Stack Software Developer -->
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">Jun 2022 – Jun 2024</span>
+          <h2>Full Stack Software Developer</h2>
+          <span class="position">Infobay — Mumbai, India</span>
+          <ul class="mt-4">
+            <li>Delivered web applications that increased user engagement by 30% and boosted brand traffic by 25%.</li>
+            <li>Reduced processing times by 60% and improved performance by 25% through optimization and SEO initiatives.</li>
+			</li>Streamlined database queries and implemented Redis caching, cutting average data‑retrieval time by 40% and improving page load speeds.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <!-- Education -->
+    <div class="row">
+      <h2 class="big-4">Education</h2>
+      <div class="underline"></div>
+    </div>
+    <br>
+    <div class="row">
+      <!-- Masters -->
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">Aug 2024 – May 2026</span>
+          <h2>Masters in Computer Science</h2>
+          <span class="position">University of Texas at Arlington</span>
+          <p class="mt-4">GPA: 3.66</p>
+        </div>
+      </div>
+      <!-- Bachelor -->
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">Jun 2020 – May 2024</span>
+          <h2>Bachelor of Engineering in AI &amp; DS</h2>
+          <span class="position">University of Mumbai</span>
+          <p class="mt-4">GPA: 9.22 / 10</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==========================
+  PROJECTS
+============================-->
+<section class="ftco-section" id="project-section">
+  <div class="container">
+    <!-- Heading -->
+    <div class="row justify-content-center mb-5 pb-2">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Three Key Projects</h2>
+        <p>Here are three of my standout projects, each demonstrating a different slice of my skill set.</p>
+      </div>
+    </div>
+
+    <div class="row d-flex">
+      <!-- GenAI‑Powered E‑Commerce Recommendation -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/CAPTAINCODERCOOL/GenAI-Powered-E-Commerce-Product-Recommendation-System"
+             class="block-20 zoom-effect"
+             style="background-image: url('https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2024/03/26063116/Banner-LLMs-for-creating-a-content-based-recommendation-system.png');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="https://github.com/CAPTAINCODERCOOL/GenAI-Powered-E-Commerce-Product-Recommendation-System">
+                GenAI‑Powered E‑Commerce Recommendation
+              </a>
+            </h3>
+            <p>
+              Built a Generative AI engine that analyzes user browsing patterns and product metadata to surface personalized
+              recommendations—driving a 25% lift in click‑through rate.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Multimodal Search Engine -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/yourusername/Multimodal-Search-Engine"
+             class="block-20 zoom-effect"
+             style="background-image: url('https://miro.medium.com/v2/resize:fit:760/1*RAHfwFht8mJKjYuLUEypWg.png');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="https://github.com/CAPTAINCODERCOOL/Multimodal-Search-Engine-with-Text-and-Image-Embedding-Retrieval">
+                Multimodal Search Engine
+              </a>
+            </h3>
+            <p>
+              Developed a search system combining OpenAI’s CLIP embeddings for text and image queries, improving result
+              relevance by 30% and enriching the user discovery experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI‑Powered SEO Automation -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/yourusername/AI-SEO-Automation"
+             class="block-20 zoom-effect"
+             style="background-image: url('https://internest.agency/wp-content/uploads/2023/12/ai-for-seo-2024.webp');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+            <h3 class="heading">
+              <a href="https://github.com/CAPTAINCODERCOOL/AI-powered-SEO-automation-platform-integrating-Google-Ads-Keyword-Planner">
+                AI‑Powered SEO Automation
+              </a>
+            </h3>
+            <p>
+              Created a pipeline that integrates the Google Ads Keyword Planner API with NLP models to automate keyword research,
+              cutting manual work by 40% while improving organic traffic forecasts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <!--==========================
+  CONTACT
+============================-->
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+  <div class="container">
+    <!-- Heading -->
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Contact</h1>
+        <h2 class="mb-4">Contact Me</h2>
+        <p>Below are the details to reach out to me!</p>
+      </div>
+    </div>
+
+    <!-- Three equally‑spaced columns -->
+    <div class="row d-flex contact-info mb-5 justify-content-center">
+      <!-- Address -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="box p-4 text-center align-self-stretch">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-map-signs"></span>
+          </div>
+          <h3 class="mb-4">Address</h3>
+          <p>Arlington, Texas, USA</p>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="box p-4 text-center align-self-stretch">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-phone2"></span>
+          </div>
+          <h3 class="mb-4">Contact Number</h3>
+          <p><a href="tel:+16825548594">+1 682 554 8594</a></p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="box p-4 text-center align-self-stretch">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <span class="icon-paper-plane"></span>
+          </div>
+          <h3 class="mb-4">Email Address</h3>
+          <p><a href="mailto:chiragpatilprofessional@gmail.com">chiragpatilprofessional@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==========================
+  FOOTER
+============================-->
+<footer class="ftco-footer ftco-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+          All rights reserved | Made with <i class="icon-heart color-danger" aria-hidden="true"></i> by
+          <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
